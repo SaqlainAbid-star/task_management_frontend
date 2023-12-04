@@ -1,0 +1,52 @@
+/* Task list */
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    transition: all 0.3s ease; /* Add a smooth transition when tasks are added or removed */
+  }
+  
+  .task-item {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease; /* Add a smooth transition when task status is changed */
+  }
+  
+  .task-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .completed {
+    background-color: #8bc34a;
+    color: #fff;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  @media screen and (min-width: 768px) {
+    /* For tablet-sized screens and above */
+    form {
+      justify-content: flex-end;
+    }
+    
+    .task-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* For desktop-sized screens and above */
+    form {
+      justify-content: center;
+    }
+    
+    .task-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  

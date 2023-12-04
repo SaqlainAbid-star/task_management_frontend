@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.solidbackgrounds.com/images/3840x2160/3840x2160-light-sky-blue-solid-color-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    /* overflow: hidden; */
+}
